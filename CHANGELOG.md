@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.2 (2023-10-14)
+
+### Remove
+
+- Remove build properties that's was not support typescript esm
+
 ## 0.0.1 (2023-10-14)
 
 ### Add
