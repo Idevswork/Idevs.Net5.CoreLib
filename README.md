@@ -1,5 +1,5 @@
 
-# Idevs.Net.CoreLib
+# Idevs.Net5.CoreLib
 
 A library to extended Serenity Framework 5.
 
@@ -12,13 +12,7 @@ A library to extended Serenity Framework 5.
 To install this module, run the following command in your computer terminal:
 
 ```console
-  dotnet add package Idevs.Net.CoreLib
-```
-
-Install dependencies nuget packages
-
-```console
-  dotnet add package PugPDF.Core
+  dotnet add package Idevs.Net5.CoreLib
 ```
 
 Add the following code to /Initialization/Startup.cs
