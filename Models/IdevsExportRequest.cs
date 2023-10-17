@@ -97,6 +97,8 @@ namespace Idevs.Models
         string? SelectionRange { get; set; }
         string? ConditionRange { get; set; }
         string? Logo { get; set; }
+        PageSize PageSize { get; set; }
+        PageMargin Margin { get; set; }
         object? Entity { get; set; }
         TableTheme TableTheme { get; set; }
         IEnumerable<AggregateColumn>? AggregateColumns { get; set; }
@@ -110,6 +112,8 @@ namespace Idevs.Models
         public string? SelectionRange { get; set; }
         public string? ConditionRange { get; set; }
         public string? Logo { get; set; }
+        public PageSize PageSize { get; set; } = new PageSize();
+        public PageMargin Margin { get; set; } = new PageMargin();
         public object? Entity { get; set; }
         public TableTheme TableTheme { get; set; }
         public IEnumerable<AggregateColumn>? AggregateColumns { get; set; }

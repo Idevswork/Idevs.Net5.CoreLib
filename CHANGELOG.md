@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.0.3 (2023-10-08)
+
+### Add
+
+- Add model PageSize for more clear to use
+- Update IdevsExportRequest
+
 ## 0.0.2 (2023-10-14)
 
 ### Remove
