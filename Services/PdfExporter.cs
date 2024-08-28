@@ -28,12 +28,14 @@ namespace Idevs.Services
         {
             var launchOption = new LaunchOptions
             {
-                Headless = true
+                Headless = true,
+                IgnoredDefaultArgs = new[] { "--disable-extensions" },
+                Args = new[] { "--no-sandbox" },
             };
 
             if (string.IsNullOrEmpty(browserPath))
             {
-                using var browserFetcher = new BrowserFetcher();
+                var browserFetcher = new BrowserFetcher();
                 await browserFetcher.DownloadAsync();
             }
             else

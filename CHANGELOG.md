@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.5 (2024-08-28)
+
+### Update
+
+- Add --no-sandbox and --disable-extensions to launchoption on puppeteer
+
 ## 0.0.4 (2024-08-17)
 
 ### Update
