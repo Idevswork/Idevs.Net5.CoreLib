@@ -1,5 +1,6 @@
 using System;
 using System.Globalization;
+using System.IO;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -44,10 +45,12 @@ namespace Idevs.Models
         public static IActionResult CreatePdfViewResult(HttpResponse response, byte[] data, string downloadName)
         {
             var fileName = downloadName ?? GetDownloadName(IdevsContentType.PDF);
-            var result = new FileContentResult(data, "application/pdf")
+            var ms = new MemoryStream(data);
+            var result = new FileStreamResult(ms, "application/pdf")
             {
                 FileDownloadName = fileName
             };
+            response.Headers.Clear();
             response.Headers.Add("Content-Disposition", "inline; filename=" + fileName);
             return result;
         }

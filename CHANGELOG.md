@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.7 (2024-08-29)
+
+### Changes
+
+- Change CreatePdfViewResult to use FileStreamResult instead of FileContentResult
+
 ## 0.0.6 (2024-08-29)
 
 ### Add
