@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.8 (2024-09-03)
+
+### Add
+
+- Add ContentResponse model
+
 ## 0.0.7 (2024-08-29)
 
 ### Changes
